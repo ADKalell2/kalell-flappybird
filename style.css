@@ -3,9 +3,18 @@
     padding: 0;
 }
 
+html{
+    height: 100%;
+}
+
+body{
+    background-image: radial-gradient(#1f2b94,#151B54);
+}
+
 #game{
     width: 400px;
     height: 500px;
+    background: #87CEEB;
     border: 1px solid #181818;
     margin: auto;
     overflow: hidden;
@@ -28,7 +37,7 @@
 #hole{
     width: 50px;
     height: 150px;
-    background-color: white;
+    background-color: #87CEEB;
     position: relative;
     left: 400px;
     top: -500px;
@@ -42,4 +51,15 @@
     position: absolute;
     top: 100px;
     border-radius: 50%;
+}
+
+
+@media only screen and (max-width: 600px){
+    #game{
+        width: 90%;
+        background: #87CEEB;
+        border: 1px solid #181818;
+        margin: auto;
+        overflow: hidden;
+    }
 }
